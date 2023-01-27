@@ -1,0 +1,34 @@
+html {
+	font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+a:visited,
+p,
+ul,
+li,
+button,
+input {
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	text-decoration: none;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1170px;
+	margin: 0 auto;
+}

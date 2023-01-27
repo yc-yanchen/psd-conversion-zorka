@@ -252,3 +252,63 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../assets/fonts/Merriweather-Light.woff");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../assets/fonts/Merriweather-Italic.woff");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("../assets/fonts/glyphicons-halflings-regular.woff"), url("../assets/fonts/glyphicons-halflings-regular.svg"), url("../assets/fonts/glyphicons-halflings-regular.ttf"), url("../assets/fonts/glyphicons-halflings-regular.eot");
+  font-weight: normal;
+}
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+a:visited,
+p,
+ul,
+li,
+button,
+input {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}

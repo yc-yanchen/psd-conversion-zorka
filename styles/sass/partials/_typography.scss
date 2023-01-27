@@ -1,0 +1,44 @@
+// Import Font Awesome
+// @font-face {
+// 	font-family: "FontAwesome";
+// 	src: url("../assets/fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../assets/fonts/fontawesome-webfont.svg") format("svg"),
+// 		url("../assets/fonts/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/FontAwesome.otf");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// Import Montserrat regular
+@font-face {
+	font-family: "Montserrat";
+	src: url("../assets/fonts/Montserrat-Regular.woff");
+	font-weight: normal;
+}
+
+// Import Montserrat bold
+@font-face {
+	font-family: "Montserrat";
+	src: url("../assets/fonts/Montserrat-Bold.woff");
+	font-weight: bold;
+}
+
+// Import Merriweather light
+@font-face {
+	font-family: "Merriweather";
+	src: url("../assets/fonts/Merriweather-Light.woff");
+	font-weight: lighter;
+}
+
+// Import Merriweather italic
+@font-face {
+	font-family: "Merriweather";
+	src: url("../assets/fonts/Merriweather-Italic.woff");
+	font-style: italic;
+}
+
+// Import Glyphicon
+@font-face {
+	font-family: "Glyphicons Halflings";
+	src: url("../assets/fonts/glyphicons-halflings-regular.woff"), url("../assets/fonts/glyphicons-halflings-regular.svg"), url("../assets/fonts/glyphicons-halflings-regular.ttf"),
+		url("../assets/fonts/glyphicons-halflings-regular.eot");
+	font-weight: normal;
+}
