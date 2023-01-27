@@ -1,0 +1,74 @@
+@use "./variables" as userV;
+
+.banner {
+	border-bottom: userV.$divider-gray 1px solid;
+	margin-bottom: 32px;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.settings {
+		display: flex;
+		gap: 0 24px;
+	}
+
+	p,
+	li,
+	a,
+	a:visited {
+		color: userV.$text-gray;
+		letter-spacing: 0.1rem;
+	}
+}
+
+.header-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 32px;
+
+	.social-container {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.social {
+		display: flex;
+		gap: 0 16px;
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.header-main > * {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: center;
+	gap: 0 24px;
+	margin-bottom: 32px;
+
+	nav ul {
+		display: flex;
+		gap: 0 24px;
+	}
+}
+
+.hero {
+	position: relative;
+	.overlay-container {
+		position: absolute;
+	}
+	.img-container {
+	}
+}

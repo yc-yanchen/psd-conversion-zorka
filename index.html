@@ -6,38 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zorka</title>
+    <script src="https://kit.fontawesome.com/96594e967a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
+
     <header>
         <!-- Top banner: for signup/login and user settings -->
         <section class="banner">
-            <div class="login-state">
-                <a href="#">
-                    <p class="text-banner">Welcome guest! Log in or register</p>
-                </a>
+            <div class="wrapper">
+                <div class="login-state">
+                    <a href="#">
+                        <p class="text-banner">Welcome guest! Log in or register</p>
+                    </a>
+                </div>
+                <!-- .login-state END -->
+                <ul class="settings">
+                    <li class="text-settings"><a href="#">My setting <span class="fa fa-chevron-down"></span></a></span>
+                    </li>
+                    <li class="text-settings"><a href="#">Language: EN <span
+                                class="fa fa-chevron-down"></span></a></span></li>
+                    <li class="text-settings"><a href="#">Currency: USD <span class="fa fa-chevron-down"></span></a>
+                    </li>
+                </ul>
+                <!-- .settings END -->
             </div>
-            <!-- .login-state END -->
-            <div class="settings">
-                <p class="text-settings">My setting</p>
-                <p class="text-settings">Language: </p>
-                <p class="text-settings">Currency: </p>
-            </div>
-            <!-- .settings END -->
+            <!-- .wrapper END -->
         </section>
-        <section class="header-main">
-            <div class="social">
-                <i class="fa-solid fa-user"></i>
+        <!-- Main section of the header, for: social media, logo, and shopping cart -->
+        <div class="wrapper">
+            <section class="header-main">
+                <div class="social-container">
+                    <ul class="social">
+                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        <li><a href="#"><span class="fa fa-vk"></span></a></li>
+                        <li><a href="#"><span class="fa fa-be"></span></a></li>
+                    </ul>
+                </div>
+                <div class="img-container">
+                    <img src="./assets/images/logo.png" alt="Zorka logo.">
+                </div>
+                <div class="button-container">
+                    <button class="button-cart">
+                        <img src="./assets/images/cart-icon.png" alt="Cart icon.">
+                        <div class="item-badge"></div>
+                    </button>
+                </div>
+            </section>
+            <!-- .header-main END -->
+            <div class="header-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Portfolio <span class="fa fa-chevron-down"></span></a></li>
+                        <li><a href="#">Blog <span class="fa fa-chevron-down"></span></a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="button-search">
+                    <img src="./assets/images/search-icon.png" alt="Search icon.">
+                </button>
             </div>
-        </section>
+            <!-- .header-nav END -->
+            <div class="hero">
+                <div class="overlay-container">
+                    <h1>Zorka Clothing</h1>
+                    <h2>A daisy lady</h2>
+                    <button class="button-pill">
+                        Shop now
+                    </button>
+                    <div class="carousel-indicator">
+                        <div class="indicator"></div>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="./assets/images/home6-slideshow3.jpg" alt="Lady in a dress facing away.">
+                </div>
+            </div>
+            <!-- .hero END -->
+        </div>
+        <!-- .wrapper END -->
+
+
     </header>
     <main>
-
     </main>
     <footer>
-
     </footer>
+
 </body>
 
 </html>

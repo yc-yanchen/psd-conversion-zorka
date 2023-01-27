@@ -254,6 +254,12 @@ template {
 }
 
 @font-face {
+  font-family: "FontAwesome";
+  src: url("../assets/fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../assets/fonts/fontawesome-webfont.svg") format("svg"), url("../assets/fonts/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/FontAwesome.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat-Regular.woff");
   font-weight: normal;
@@ -277,7 +283,44 @@ template {
   font-family: "Glyphicons Halflings";
   src: url("../assets/fonts/glyphicons-halflings-regular.woff"), url("../assets/fonts/glyphicons-halflings-regular.svg"), url("../assets/fonts/glyphicons-halflings-regular.ttf"), url("../assets/fonts/glyphicons-halflings-regular.eot");
   font-weight: normal;
+  font-style: normal;
 }
+.fa::before {
+  font-family: "FontAwesome";
+}
+
+.fa-chevron-down::before {
+  content: "\f107";
+}
+
+.fa-facebook-f::before {
+  content: "\f09a";
+}
+
+.fa-twitter::before {
+  content: "\f099";
+}
+
+.fa-instagram::before {
+  content: "\f16d";
+}
+
+.fa-vk::before {
+  content: "\f189";
+}
+
+.fa-be::before {
+  content: "\f1b4";
+}
+
+.gi::before {
+  font-family: "Glyphicons Halflings";
+}
+
+.gi-chevron::before {
+  content: "\e114";
+}
+
 html {
   font-size: 62.5%;
 }
@@ -298,6 +341,10 @@ input {
   text-transform: uppercase;
   font-family: "Montserrat";
   text-decoration: none;
+  color: #222222;
+  font-size: 1.1rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 ul,
@@ -307,8 +354,115 @@ li {
   list-style: none;
 }
 
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.banner {
+  border-bottom: #eeeeee 1px solid;
+  margin-bottom: 32px;
+}
+.banner .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 24px;
+}
+.banner p,
+.banner li,
+.banner a,
+.banner a:visited {
+  color: #888888;
+  letter-spacing: 0.1rem;
+}
+
+.header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.header-main .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.header-main .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 16px;
+}
+.header-main .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-main > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0 24px;
+  margin-bottom: 32px;
+}
+.header-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 24px;
+}
+
+.hero {
+  position: relative;
+}
+.hero .overlay-container {
+  position: absolute;
 }
