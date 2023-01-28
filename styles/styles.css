@@ -345,6 +345,8 @@ input {
   font-size: 1.1rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -368,6 +370,7 @@ button {
 }
 
 .banner {
+  padding: 16px 0;
   border-bottom: #eeeeee 1px solid;
   margin-bottom: 32px;
 }
@@ -393,7 +396,7 @@ button {
 .banner a,
 .banner a:visited {
   color: #888888;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
 }
 
 .header-main {
@@ -406,7 +409,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 .header-main .social-container {
   display: -webkit-box;
@@ -421,6 +424,9 @@ button {
   display: -ms-flexbox;
   display: flex;
   gap: 0 16px;
+}
+.header-main .social span {
+  font-size: 1.6rem;
 }
 .header-main .button-container {
   display: -webkit-box;
@@ -457,12 +463,90 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0 24px;
+  gap: 0 32px;
+}
+.header-nav nav ul a {
+  font-size: 1.3rem;
+  letter-spacing: 0.4rem;
+  padding-bottom: 8px;
+}
+.header-nav nav ul a:hover,
+.header-nav nav ul a:focus {
+  border-bottom: 2px solid #222222;
 }
 
 .hero {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero .overlay-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
+  z-index: 10;
+}
+.hero .img-container {
+  gap: 80px;
+}
+.hero .img-container img {
+  -o-object-fit: none;
+     object-fit: none;
+}
+.hero h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.8rem;
+  margin-bottom: 24px;
+}
+.hero h2 {
+  font-family: "Merriweather";
+  font-size: 7.2rem;
+  font-weight: normal;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.hero .button-pill {
+  height: 42px;
+  width: 124px;
+  border-radius: 64px;
+  letter-spacing: 0.2rem;
+  background-color: white;
+}
+.hero .carousel-indicator {
+  position: absolute;
+  bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 16px;
+}
+.hero .carousel-indicator .indicator {
+  height: 12px;
+  width: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.hero .carousel-indicator .indicator-active {
+  background-color: white;
 }

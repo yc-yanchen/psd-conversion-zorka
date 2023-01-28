@@ -73,32 +73,36 @@
                 </button>
             </div>
             <!-- .header-nav END -->
-            <div class="hero">
-                <div class="overlay-container">
-                    <h1>Zorka Clothing</h1>
-                    <h2>A daisy lady</h2>
-                    <button class="button-pill">
-                        Shop now
-                    </button>
-                    <div class="carousel-indicator">
-                        <div class="indicator"></div>
-                    </div>
-                </div>
-                <div class="img-container">
-                    <img src="./assets/images/home6-slideshow3.jpg" alt="Lady in a dress facing away.">
-                </div>
-            </div>
-            <!-- .hero END -->
+
         </div>
         <!-- .wrapper END -->
-
+        <div class="hero">
+            <div class="overlay-container">
+                <h1>Zorka Clothing</h1>
+                <h2 id="js-slide-overlay">A daisy lady</h2>
+                <button class="button-pill">
+                    Shop now
+                </button>
+            </div>
+            <!-- .overlay-container END -->
+            <div class="carousel-indicator">
+                <div class="indicator indicator-active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+            <!-- .carousel-indicator END -->
+            <div class="img-container">
+                <img id="js-slide">
+            </div>
+            <!-- .hero END -->
 
     </header>
     <main>
     </main>
     <footer>
     </footer>
-
+    <script src="script.js">
+    </script>
 </body>
 
 </html>

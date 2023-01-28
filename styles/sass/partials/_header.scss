@@ -1,6 +1,8 @@
 @use "./variables" as userV;
+@use "./mixin" as userM;
 
 .banner {
+	padding: 16px 0;
 	border-bottom: userV.$divider-gray 1px solid;
 	margin-bottom: 32px;
 
@@ -20,7 +22,7 @@
 	a,
 	a:visited {
 		color: userV.$text-gray;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.2rem;
 	}
 }
 
@@ -28,7 +30,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 32px;
+	margin-bottom: 48px;
 
 	.social-container {
 		display: flex;
@@ -38,6 +40,9 @@
 	.social {
 		display: flex;
 		gap: 0 16px;
+		span {
+			font-size: 1.6rem;
+		}
 	}
 
 	.button-container {
@@ -60,15 +65,70 @@
 
 	nav ul {
 		display: flex;
-		gap: 0 24px;
+		gap: 0 32px;
+		a {
+			font-size: 1.3rem;
+			letter-spacing: 0.4rem;
+			padding-bottom: 8px;
+		}
+		a:hover,
+		a:focus {
+			border-bottom: 2px solid userV.$text-black;
+		}
 	}
 }
 
 .hero {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	.overlay-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		position: absolute;
+		z-index: 10;
 	}
 	.img-container {
+		gap: 80px;
+		img {
+			object-fit: none;
+		}
+	}
+	h1 {
+		font-size: 1.6rem;
+		font-weight: normal;
+		letter-spacing: 0.8rem;
+		margin-bottom: 24px;
+	}
+	h2 {
+		font-family: "Merriweather";
+		font-size: 7.2rem;
+		font-weight: normal;
+		letter-spacing: 0.3rem;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+	}
+	.button-pill {
+		@include userM.pill-shape;
+		background-color: white;
+	}
+	.carousel-indicator {
+		position: absolute;
+		bottom: 40px;
+		display: flex;
+		gap: 0 16px;
+		.indicator {
+			height: 12px;
+			width: 12px;
+			border: 1px solid white;
+			border-radius: 50%;
+		}
+		.indicator-active {
+			background-color: white;
+		}
 	}
 }
