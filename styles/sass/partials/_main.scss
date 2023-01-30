@@ -1,0 +1,103 @@
+@use "./variables" as userV;
+
+.promotion {
+	display: flex;
+	gap: userV.$reg-spacing;
+	margin-bottom: 80px;
+	// Styling the layout and size
+	.card-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		.info {
+			height: 72px;
+			// for the container to fill remaining space after calculating for space of the icon
+			width: calc(100% - 72px);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.icon {
+			height: 72px;
+			width: 72px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		h5 {
+			font-size: 1.3rem;
+			font-weight: normal;
+			letter-spacing: 0.1rem;
+			color: userV.$text-white;
+		}
+	}
+	// Styling the colour
+	.card-container:nth-child(1) {
+		.info {
+			background-color: userV.$pink;
+		}
+		.icon {
+			background-color: userV.$dark-pink;
+		}
+	}
+	.card-container:nth-child(2) {
+		.info {
+			background-color: userV.$brown;
+		}
+		.icon {
+			background-color: userV.$dark-brown;
+		}
+	}
+	.card-container:nth-child(3) {
+		.info {
+			background-color: userV.$gray;
+		}
+		.icon {
+			background-color: userV.$dark-gray;
+		}
+	}
+}
+
+.trend {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
+	h3 {
+		font-size: 2.1rem;
+		font-weight: normal;
+		letter-spacing: 0.8rem;
+		margin-bottom: 16px;
+	}
+	h4 {
+		font-size: 1.3rem;
+		font-family: "Merriweather";
+		font-style: italic;
+		font-weight: normal;
+		letter-spacing: 0.2rem;
+		text-transform: capitalize;
+		margin-bottom: 64px;
+	}
+	.style-selection {
+		display: flex;
+		gap: 0 64px;
+		p {
+			font-size: 1.3rem;
+			letter-spacing: 0.3rem;
+			margin-bottom: 12px;
+		}
+		li:hover,
+		li:focus {
+			cursor: pointer;
+			p {
+				color: userV.$pink;
+			}
+			.half-underline {
+				width: 48px;
+				height: 1px;
+				background-color: userV.$text-black;
+			}
+		}
+	}
+}
