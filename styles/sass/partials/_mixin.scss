@@ -1,6 +1,21 @@
+@use "./variables" as userV;
+
 @mixin pill-shape {
 	height: 42px;
 	width: 124px;
 	border-radius: 64px;
 	letter-spacing: 0.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin round-shape {
+	height: 42px;
+	width: 42px;
+	border-radius: 50%;
+	border: userV.$outline-gray solid 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

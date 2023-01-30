@@ -48,3 +48,9 @@ button {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+
+.item-wrapper {
+	height: calc(100% - 24px);
+	width: calc(100% - 24px);
+	position: absolute;
+}

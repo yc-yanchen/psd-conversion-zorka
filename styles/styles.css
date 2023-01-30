@@ -369,6 +369,12 @@ button {
   margin: 0 auto;
 }
 
+.item-wrapper {
+  height: calc(100% - 24px);
+  width: calc(100% - 24px);
+  position: absolute;
+}
+
 .banner {
   padding: 16px 0;
   border-bottom: #eeeeee 1px solid;
@@ -472,7 +478,7 @@ button {
 }
 .header-nav nav ul a:hover,
 .header-nav nav ul a:focus {
-  border-bottom: 2px solid #222222;
+  border-bottom: 1px solid #222222;
 }
 
 .hero {
@@ -532,6 +538,15 @@ button {
   width: 124px;
   border-radius: 64px;
   letter-spacing: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
 }
 .hero .carousel-indicator {
@@ -633,7 +648,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 48px;
 }
 .trend h3 {
   font-size: 2.1rem;
@@ -674,4 +689,167 @@ button {
   width: 48px;
   height: 1px;
   background-color: #222222;
+}
+
+.shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 36px;
+  margin-bottom: 80px;
+}
+.shop .product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc((100% - 108px) / 4);
+}
+.shop .upper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shop .lower {
+  padding-top: 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shop .lower .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shop .lower .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.shop .lower .action .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 8px;
+}
+.shop .lower h5 {
+  margin-bottom: 12px;
+}
+.shop .lower .product-name {
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+.shop .lower .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 12px;
+}
+.shop .lower .price .sale-price {
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  color: #ca7379;
+  margin-bottom: 24px;
+}
+.shop .lower .price .sale-price::after {
+  content: " USD";
+}
+.shop .lower .price .regular-price {
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  color: #aaaaaa;
+  text-decoration: line-through;
+}
+.shop .lower .price .regular-price::after {
+  content: " USD";
+}
+.shop .upper:hover .overlay,
+.shop .upper:focus .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shop .upper:hover .overlay button,
+.shop .upper:focus .overlay button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ca7379;
+}
+.shop .button-pill {
+  height: 42px;
+  width: 124px;
+  border-radius: 64px;
+  letter-spacing: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: #cccccc 1px solid;
+}
+.shop .button-pill:hover,
+.shop .button-pill:focus {
+  background-color: #ca7379;
+  color: #ffffff;
+  border: none;
+}
+.shop .button-round {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  border: #cccccc solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

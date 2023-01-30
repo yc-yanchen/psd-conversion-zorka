@@ -1,4 +1,5 @@
 @use "./variables" as userV;
+@use "./mixin" as userM;
 
 .promotion {
 	display: flex;
@@ -63,7 +64,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 100px;
+	margin-bottom: 48px;
 	h3 {
 		font-size: 2.1rem;
 		font-weight: normal;
@@ -99,5 +100,103 @@
 				background-color: userV.$text-black;
 			}
 		}
+	}
+}
+
+.shop {
+	display: flex;
+	width: 100%;
+	gap: userV.$reg-spacing;
+	margin-bottom: 80px;
+	.product-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: calc((100% - userV.$reg-spacing * 3) / 4);
+	}
+	.upper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.lower {
+		padding-top: 24px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.price {
+			display: flex;
+			justify-content: center;
+		}
+		.action {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			.flex-container {
+				display: flex;
+				gap: 0 8px;
+			}
+		}
+		h5 {
+			margin-bottom: 12px;
+		}
+		.product-name {
+			font-weight: normal;
+			letter-spacing: 0.1rem;
+			font-size: 1.1rem;
+		}
+		.price {
+			display: flex;
+			gap: 0 12px;
+			.sale-price {
+				letter-spacing: 0.1rem;
+				font-size: 1.3rem;
+				color: userV.$pink;
+				margin-bottom: 24px;
+			}
+			.sale-price::after {
+				content: " USD";
+			}
+			.regular-price {
+				letter-spacing: 0.1rem;
+				font-size: 1.1rem;
+				color: userV.$text-sale;
+				text-decoration: line-through;
+			}
+			.regular-price::after {
+				content: " USD";
+			}
+		}
+	}
+	.upper:hover .overlay,
+	.upper:focus .overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button {
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			background-color: userV.$pink;
+		}
+	}
+	.button-pill {
+		@include userM.pill-shape;
+		border: userV.$outline-gray 1px solid;
+	}
+	.button-pill:hover,
+	.button-pill:focus {
+		background-color: userV.$pink;
+		color: userV.$text-white;
+		border: none;
+	}
+	.button-round {
+		@include userM.round-shape;
 	}
 }
