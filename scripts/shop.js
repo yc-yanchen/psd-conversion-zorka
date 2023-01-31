@@ -13,7 +13,7 @@ shop.mountProduct = (html, assets, condition, location) => {
     const filtered = assets.filter((product) =>
         product.tag.toLowerCase().includes(condition.toLowerCase())
     );
-    console.log(filtered);
+    // console.log(filtered);
     // go through the filtered array and...
     filtered.forEach((product) => {
         //create a new div with class of product-card
@@ -21,7 +21,7 @@ shop.mountProduct = (html, assets, condition, location) => {
         newProduct.classList = 'product-card';
         // add shop.productStructure as innerHTML
         newProduct.innerHTML = (html);
-        console.log(newProduct);
+        // console.log(newProduct);
         // modify the content within the innerHTML
         // modify img link
         newProduct.children[0].children[1].src = product.productImg;
