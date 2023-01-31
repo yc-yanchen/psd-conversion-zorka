@@ -90,6 +90,11 @@
 			letter-spacing: 0.3rem;
 			margin-bottom: 12px;
 		}
+		.half-underline {
+			width: 48px;
+			height: 1px;
+			background-color: rgba(0, 0, 0, 0);
+		}
 		li:hover,
 		li:focus {
 			cursor: pointer;
