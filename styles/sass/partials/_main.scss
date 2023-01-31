@@ -59,12 +59,14 @@
 		}
 	}
 }
-
-.trend {
+.trendy {
+	margin-bottom: 48px;
+}
+.shop-header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 48px;
+
 	h3 {
 		font-size: 2.1rem;
 		font-weight: normal;
@@ -108,6 +110,7 @@
 	width: 100%;
 	gap: userV.$reg-spacing;
 	margin-bottom: 80px;
+	overflow: hidden;
 	.product-card {
 		display: flex;
 		flex-direction: column;
@@ -123,14 +126,17 @@
 	.lower {
 		padding-top: 24px;
 		width: 100%;
+		height: 144px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		.price {
 			display: flex;
 			justify-content: center;
+			gap: 0 12px;
 		}
 		.action {
+			margin-top: auto;
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
@@ -140,7 +146,8 @@
 			}
 		}
 		h5 {
-			margin-bottom: 12px;
+			margin-bottom: 16px;
+			text-align: center;
 		}
 		.product-name {
 			font-weight: normal;
@@ -148,13 +155,10 @@
 			font-size: 1.1rem;
 		}
 		.price {
-			display: flex;
-			gap: 0 12px;
 			.sale-price {
 				letter-spacing: 0.1rem;
 				font-size: 1.3rem;
 				color: userV.$pink;
-				margin-bottom: 24px;
 			}
 			.sale-price::after {
 				content: " USD";
@@ -198,5 +202,64 @@
 	}
 	.button-round {
 		@include userM.round-shape;
+	}
+}
+
+.promotion {
+	.banner-link {
+		position: relative;
+		width: calc(100% - userV.$reg-spacing);
+		img {
+			width: 100%;
+			object-fit: fill;
+		}
+	}
+	.banner-link-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		.overlay-text {
+			position: absolute;
+			color: userV.$text-white;
+			font-size: 3rem;
+			letter-spacing: 1rem;
+			font-weight: bold;
+			// to create line breaks on each line
+			word-spacing: 100rem;
+			width: 272px;
+		}
+	}
+	.banner-link-right {
+		.overlay {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.icon {
+			// height: 100%;
+			padding: 8px 12px;
+			border: userV.$text-white 2px solid;
+			border-right: none;
+		}
+		.text {
+			border: userV.$text-white 2px solid;
+			padding: 8px;
+		}
+		.overlay-text {
+			// position: absolute;
+			color: userV.$text-white;
+			font-size: 1.5rem;
+			text-justify: auto;
+			letter-spacing: 0.6rem;
+		}
+		.attention {
+			font-weight: bold;
+			font-size: 3rem;
+			letter-spacing: 1rem;
+		}
 	}
 }

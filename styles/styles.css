@@ -637,7 +637,11 @@ button {
   background-color: #738191;
 }
 
-.trend {
+.trendy {
+  margin-bottom: 48px;
+}
+
+.shop-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,15 +652,14 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 48px;
 }
-.trend h3 {
+.shop-header h3 {
   font-size: 2.1rem;
   font-weight: normal;
   letter-spacing: 0.8rem;
   margin-bottom: 16px;
 }
-.trend h4 {
+.shop-header h4 {
   font-size: 1.3rem;
   font-family: "Merriweather";
   font-style: italic;
@@ -665,27 +668,27 @@ button {
   text-transform: capitalize;
   margin-bottom: 64px;
 }
-.trend .style-selection {
+.shop-header .style-selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0 64px;
 }
-.trend .style-selection p {
+.shop-header .style-selection p {
   font-size: 1.3rem;
   letter-spacing: 0.3rem;
   margin-bottom: 12px;
 }
-.trend .style-selection li:hover,
-.trend .style-selection li:focus {
+.shop-header .style-selection li:hover,
+.shop-header .style-selection li:focus {
   cursor: pointer;
 }
-.trend .style-selection li:hover p,
-.trend .style-selection li:focus p {
+.shop-header .style-selection li:hover p,
+.shop-header .style-selection li:focus p {
   color: #ca7379;
 }
-.trend .style-selection li:hover .half-underline,
-.trend .style-selection li:focus .half-underline {
+.shop-header .style-selection li:hover .half-underline,
+.shop-header .style-selection li:focus .half-underline {
   width: 48px;
   height: 1px;
   background-color: #222222;
@@ -698,6 +701,7 @@ button {
   width: 100%;
   gap: 36px;
   margin-bottom: 80px;
+  overflow: hidden;
 }
 .shop .product-card {
   display: -webkit-box;
@@ -727,6 +731,7 @@ button {
 .shop .lower {
   padding-top: 24px;
   width: 100%;
+  height: 144px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,8 +750,10 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 0 12px;
 }
 .shop .lower .action {
+  margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,24 +769,18 @@ button {
   gap: 0 8px;
 }
 .shop .lower h5 {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 .shop .lower .product-name {
   font-weight: normal;
   letter-spacing: 0.1rem;
   font-size: 1.1rem;
 }
-.shop .lower .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0 12px;
-}
 .shop .lower .price .sale-price {
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
   color: #ca7379;
-  margin-bottom: 24px;
 }
 .shop .lower .price .sale-price::after {
   content: " USD";
@@ -852,4 +853,72 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.promotion .banner-link {
+  position: relative;
+  width: calc(100% - 36px);
+}
+.promotion .banner-link img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.promotion .banner-link-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.promotion .banner-link-left .overlay-text {
+  position: absolute;
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  word-spacing: 100rem;
+  width: 272px;
+}
+.promotion .banner-link-right .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.promotion .banner-link-right .icon {
+  padding: 8px 12px;
+  border: #ffffff 2px solid;
+  border-right: none;
+}
+.promotion .banner-link-right .text {
+  border: #ffffff 2px solid;
+  padding: 8px;
+}
+.promotion .banner-link-right .overlay-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-justify: auto;
+  letter-spacing: 0.6rem;
+}
+.promotion .banner-link-right .attention {
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 1rem;
 }

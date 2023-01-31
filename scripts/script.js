@@ -9,6 +9,8 @@ header.changeSlide(assets.slideshowAssets, slideshowIndex);
 
 // console.log(document.querySelector('.product-card'));
 
-shop.mountProduct(shop.productStructure(), assets.shopProduct, 'trending', '.shop');
+shop.mountProduct(shop.productStructure(), assets.shopProduct, 'trending', '.shop-trendy');
+
+shop.mountProduct(shop.productStructure(), assets.shopProduct, 'sale', '.shop-sale');
 
 console.log(assets.shopProduct);
