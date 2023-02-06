@@ -835,6 +835,7 @@ button {
 }
 .product-name h5 {
   font-weight: normal;
+  line-height: px;
 }
 
 .price {
@@ -862,6 +863,22 @@ button {
 }
 .price .regular-price::after {
   content: " USD";
+}
+
+.button-round {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  border: #cccccc solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .promotion .banner-link {
@@ -945,8 +962,18 @@ button {
 
 .small-shop {
   padding: 40px 28px;
-  width: 100%;
+  width: calc((100% - 72px) / 3);
   background-color: #ffffff;
+}
+.small-shop .product-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px 0;
 }
 
 .small-shop h3 {
@@ -959,4 +986,31 @@ button {
   border-bottom: #222222 1px solid;
   display: inline-block;
   padding-bottom: 8px;
+  margin-bottom: 40px;
+}
+
+.small-product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.small-product-card .product-name {
+  display: block;
+  text-align: left;
+}
+.small-product-card .price {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.small-product-card .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 4px;
+  margin-top: 40px;
 }

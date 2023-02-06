@@ -11,8 +11,13 @@
 
 .small-shop {
 	padding: 40px 28px;
-	width: 100%;
+	width: calc((100% - 2 * userV.$reg-spacing) / 3);
 	background-color: userV.$text-white;
+	.product-flex {
+		display: flex;
+		flex-direction: column;
+		gap: 24px 0;
+	}
 }
 
 .small-shop h3 {
@@ -25,4 +30,24 @@
 	border-bottom: userV.$text-black 1px solid;
 	display: inline-block;
 	padding-bottom: 8px;
+	margin-bottom: 40px;
+}
+
+.small-product-card {
+	display: flex;
+	gap: 24px;
+
+	.product-name {
+		display: block;
+		text-align: left;
+	}
+	.price {
+		justify-content: flex-start;
+	}
+	.action {
+		display: flex;
+		justify-content: flex-end;
+		gap: 4px;
+		margin-top: 40px;
+	}
 }

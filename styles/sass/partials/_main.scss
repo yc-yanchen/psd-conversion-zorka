@@ -62,6 +62,7 @@
 .trendy {
 	margin-bottom: 48px;
 }
+
 .shop-header {
 	display: flex;
 	flex-direction: column;
@@ -189,6 +190,7 @@
 	margin-bottom: 16px;
 	h5 {
 		font-weight: normal;
+		line-height: px;
 	}
 }
 .price {
@@ -212,6 +214,10 @@
 	.regular-price::after {
 		content: " USD";
 	}
+}
+
+.button-round {
+	@include userM.round-shape;
 }
 // Common styling for the card elements END
 
