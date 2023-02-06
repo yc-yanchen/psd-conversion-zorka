@@ -135,11 +135,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		.price {
-			display: flex;
-			justify-content: center;
-			gap: 0 12px;
-		}
+
 		.action {
 			margin-top: auto;
 			display: flex;
@@ -150,35 +146,8 @@
 				gap: 0 8px;
 			}
 		}
-		h5 {
-			margin-bottom: 16px;
-			text-align: center;
-		}
-		.product-name {
-			font-weight: normal;
-			letter-spacing: 0.1rem;
-			font-size: 1.1rem;
-		}
-		.price {
-			.sale-price {
-				letter-spacing: 0.1rem;
-				font-size: 1.3rem;
-				color: userV.$pink;
-			}
-			.sale-price::after {
-				content: " USD";
-			}
-			.regular-price {
-				letter-spacing: 0.1rem;
-				font-size: 1.1rem;
-				color: userV.$text-sale;
-				text-decoration: line-through;
-			}
-			.regular-price::after {
-				content: " USD";
-			}
-		}
 	}
+
 	.upper:hover .overlay,
 	.upper:focus .overlay {
 		position: absolute;
@@ -210,6 +179,42 @@
 	}
 }
 
+// Common styling for the card elements
+.product-name {
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	font-size: 1.1rem;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 16px;
+	h5 {
+		font-weight: normal;
+	}
+}
+.price {
+	display: flex;
+	justify-content: center;
+	gap: 0 12px;
+	.sale-price {
+		letter-spacing: 0.1rem;
+		font-size: 1.3rem;
+		color: userV.$pink;
+	}
+	.sale-price::after {
+		content: " USD";
+	}
+	.regular-price {
+		letter-spacing: 0.1rem;
+		font-size: 1.1rem;
+		color: userV.$text-sale;
+		text-decoration: line-through;
+	}
+	.regular-price::after {
+		content: " USD";
+	}
+}
+// Common styling for the card elements END
+
 .promotion {
 	.banner-link {
 		position: relative;
@@ -235,6 +240,7 @@
 			width: 272px;
 		}
 	}
+
 	.banner-link-right {
 		.overlay {
 			width: 100%;

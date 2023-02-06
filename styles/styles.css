@@ -748,15 +748,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
-.shop .lower .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 0 12px;
-}
 .shop .lower .action {
   margin-top: auto;
   display: -webkit-box;
@@ -772,32 +763,6 @@ button {
   display: -ms-flexbox;
   display: flex;
   gap: 0 8px;
-}
-.shop .lower h5 {
-  margin-bottom: 16px;
-  text-align: center;
-}
-.shop .lower .product-name {
-  font-weight: normal;
-  letter-spacing: 0.1rem;
-  font-size: 1.1rem;
-}
-.shop .lower .price .sale-price {
-  letter-spacing: 0.1rem;
-  font-size: 1.3rem;
-  color: #ca7379;
-}
-.shop .lower .price .sale-price::after {
-  content: " USD";
-}
-.shop .lower .price .regular-price {
-  letter-spacing: 0.1rem;
-  font-size: 1.1rem;
-  color: #aaaaaa;
-  text-decoration: line-through;
-}
-.shop .lower .price .regular-price::after {
-  content: " USD";
 }
 .shop .upper:hover .overlay,
 .shop .upper:focus .overlay {
@@ -858,6 +823,45 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.product-name {
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.product-name h5 {
+  font-weight: normal;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0 12px;
+}
+.price .sale-price {
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  color: #ca7379;
+}
+.price .sale-price::after {
+  content: " USD";
+}
+.price .regular-price {
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  color: #aaaaaa;
+  text-decoration: line-through;
+}
+.price .regular-price::after {
+  content: " USD";
 }
 
 .promotion .banner-link {
@@ -926,4 +930,33 @@ button {
   font-weight: bold;
   font-size: 3rem;
   letter-spacing: 1rem;
+}
+
+.small-shop-container {
+  background-color: #fafafa;
+  padding: 80px 0;
+}
+.small-shop-container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 36px;
+}
+
+.small-shop {
+  padding: 40px 28px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.small-shop h3 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: normal;
+}
+
+.small-shop-heading {
+  border-bottom: #222222 1px solid;
+  display: inline-block;
+  padding-bottom: 8px;
 }

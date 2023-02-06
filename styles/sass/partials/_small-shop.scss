@@ -1,0 +1,28 @@
+@use "./variables" as userV;
+
+.small-shop-container {
+	background-color: userV.$bg-gray;
+	padding: 80px 0;
+	.wrapper {
+		display: flex;
+		gap: 0 userV.$reg-spacing;
+	}
+}
+
+.small-shop {
+	padding: 40px 28px;
+	width: 100%;
+	background-color: userV.$text-white;
+}
+
+.small-shop h3 {
+	font-size: 1.3rem;
+	letter-spacing: 0.2rem;
+	font-weight: normal;
+}
+
+.small-shop-heading {
+	border-bottom: userV.$text-black 1px solid;
+	display: inline-block;
+	padding-bottom: 8px;
+}
