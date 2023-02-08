@@ -23,7 +23,7 @@ assets.slideshowAssets = [
 ];
 
 
-
+// store item listings, used to populate the store page with javascript
 assets.shopProduct = [
     new ProductInfo('Handmade flared jacket', './assets/images/product-img-1.jpg', 'women', 'trending', 0, 0, 189.99),
     new ProductInfo('Coat with wool wraparound collar', './assets/images/product-img-2.jpg', 'men', 'trending', 25, 100.99, 189.99),

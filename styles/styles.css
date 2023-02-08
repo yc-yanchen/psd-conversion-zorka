@@ -952,6 +952,7 @@ button {
 .small-shop-container {
   background-color: #fafafa;
   padding: 80px 0;
+  margin-bottom: 80px;
 }
 .small-shop-container .wrapper {
   display: -webkit-box;
