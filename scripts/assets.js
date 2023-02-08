@@ -32,7 +32,16 @@ assets.shopProduct = [
     new ProductInfo('Hooded bomber jacket', './assets/images/product-img-5.jpg', 'men', 'sale', 30, 100.99, 189.99),
     new ProductInfo('Structured collarless coat', './assets/images/product-img-6.jpg', 'women', 'sale', 50, 100.99, 189.99),
     new ProductInfo('Houndstooth wool coat', './assets/images/product-img-7.jpg', 'women', 'sale', 15, 100.99, 189.99),
-    new ProductInfo('Coat with wraparound collar', './assets/images/product-img-8.jpg', 'women', 'sale', 25, 100.99, 189.99)
+    new ProductInfo('Coat with wraparound collar', './assets/images/product-img-8.jpg', 'women', 'sale', 25, 100.99, 189.99),
+    new ProductInfo('parka with faux fur hood', './assets/images/new-in-img-1.jpg', 'women', 'new-in', 0, 0, 189.99),
+    new ProductInfo('bomber jacket', './assets/images/new-in-img-2.jpg', 'kid', 'new-in', 0, 0, 189.99),
+    new ProductInfo('handmade flared jacket', './assets/images/featured-img-1.jpg', 'women', 'featured', 0, 0, 189.99),
+    new ProductInfo('short knit coat with belt', './assets/images/featured-img-2.jpg', 'women', 'featured', 0, 0, 189.99),
+    new ProductInfo('oversize bomber jacket', './assets/images/toprated-img-1.jpg', 'men', 'top-rated', 0, 0, 189.99),
+    new ProductInfo('handmade flared jacket', './assets/images/toprated-img-2.jpg', 'men', 'top-rated', 0, 0, 189.99),
+
+
+
 ];
 
 export default assets;
