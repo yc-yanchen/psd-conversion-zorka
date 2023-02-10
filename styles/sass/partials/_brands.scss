@@ -1,0 +1,11 @@
+@use "./variables" as userV;
+
+.brand-container {
+	padding: 80px 0;
+	border-bottom: 1px userV.$outline-gray solid;
+	.brand-list {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}

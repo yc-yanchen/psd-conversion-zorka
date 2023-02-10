@@ -1,0 +1,43 @@
+@use "./variables" as userV;
+.blog-container {
+	padding: 80px 0;
+}
+
+.blog-container .wrapper {
+	display: flex;
+	gap: userV.$reg-spacing;
+
+	.blog-post {
+		display: flex;
+		gap: 24px;
+		width: calc((100% - 2 * userV.$reg-spacing) / 3);
+
+		.text-container {
+			position: relative;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+		}
+	}
+}
+
+// typography related style within .blog-post
+.blog-post {
+	h5 {
+		font-size: 1.4rem;
+		letter-spacing: 0.1rem;
+		font-weight: normal;
+	}
+	p {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+		color: userV.$text-gray;
+		text-transform: none;
+	}
+	.read-more {
+		color: userV.$pink;
+		letter-spacing: 0.2rem;
+		font-size: 1.2rem;
+	}
+}

@@ -37,14 +37,6 @@
 		justify-content: flex-start;
 	}
 
-	.social {
-		display: flex;
-		gap: 0 16px;
-		span {
-			font-size: 1.6rem;
-		}
-	}
-
 	.button-container {
 		display: flex;
 		justify-content: flex-end;
@@ -84,7 +76,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 40px;
 
 	.overlay-container {
 		display: flex;
@@ -131,5 +122,13 @@
 		.indicator-active {
 			background-color: white;
 		}
+	}
+}
+
+.social {
+	display: flex;
+	gap: 0 16px;
+	span {
+		font-size: 1.6rem;
 	}
 }

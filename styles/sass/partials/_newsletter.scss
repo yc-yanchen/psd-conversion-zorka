@@ -1,0 +1,69 @@
+@use "./variables" as userV;
+@use "./mixin" as userM;
+
+.newsletter {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	// position the image
+	.img-container {
+		height: 400px;
+		width: 1920px;
+		margin-left: auto;
+		margin-right: auto;
+		img {
+			height: 100%;
+			width: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+
+	// style for the overlay container
+	.overlay-container {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+		.text-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 24px;
+			h6,
+			p {
+				color: userV.$text-white;
+			}
+
+			h6 {
+				font-size: 1.8rem;
+				letter-spacing: 0.5rem;
+			}
+			p {
+				font-family: "Merriweather";
+				font-style: italic;
+				letter-spacing: 0.4rem;
+				font-size: 1.4rem;
+				text-transform: none;
+			}
+		}
+		form {
+			display: flex;
+			gap: 8px;
+			input[type="email"] {
+				@include userM.pill-shape;
+				border: none;
+				width: 328px;
+				text-align: center;
+			}
+			button {
+				@include userM.pill-shape;
+				background-color: userV.$pink;
+				color: userV.$text-white;
+			}
+		}
+	}
+}

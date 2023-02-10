@@ -365,7 +365,7 @@ button {
 
 .wrapper {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -424,15 +424,6 @@ button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-.header-main .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0 16px;
-}
-.header-main .social span {
-  font-size: 1.6rem;
 }
 .header-main .button-container {
   display: -webkit-box;
@@ -496,7 +487,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
 }
 .hero .overlay-container {
   display: -webkit-box;
@@ -567,12 +557,24 @@ button {
   background-color: white;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 16px;
+}
+.social span {
+  font-size: 1.6rem;
+}
+
 .promotion {
+  padding: 80px 0;
+}
+.promotion .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 36px;
-  margin-bottom: 80px;
 }
 .promotion .card-container {
   display: -webkit-box;
@@ -764,6 +766,9 @@ button {
   display: flex;
   gap: 0 8px;
 }
+.shop .overlay {
+  display: none;
+}
 .shop .upper:hover .overlay,
 .shop .upper:focus .overlay {
   position: absolute;
@@ -832,10 +837,10 @@ button {
   font-weight: normal;
   text-align: center;
   margin-bottom: 16px;
+  line-height: 16px;
 }
 .product-name h5 {
   font-weight: normal;
-  line-height: px;
 }
 
 .price {
@@ -952,7 +957,6 @@ button {
 .small-shop-container {
   background-color: #fafafa;
   padding: 80px 0;
-  margin-bottom: 80px;
 }
 .small-shop-container .wrapper {
   display: -webkit-box;
@@ -995,6 +999,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   gap: 24px;
+  position: relative;
 }
 .small-product-card .product-name {
   display: block;
@@ -1013,5 +1018,206 @@ button {
       -ms-flex-pack: end;
           justify-content: flex-end;
   gap: 4px;
-  margin-top: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.blog-container {
+  padding: 80px 0;
+}
+
+.blog-container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 36px;
+}
+.blog-container .wrapper .blog-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 72px) / 3);
+}
+.blog-container .wrapper .blog-post .text-container {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.blog-post h5 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+}
+.blog-post p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #888888;
+  text-transform: none;
+}
+.blog-post .read-more {
+  color: #ca7379;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.newsletter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.newsletter .img-container {
+  height: 400px;
+  width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.newsletter .img-container img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newsletter .overlay-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.newsletter .overlay-container .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+.newsletter .overlay-container .text-container h6,
+.newsletter .overlay-container .text-container p {
+  color: #ffffff;
+}
+.newsletter .overlay-container .text-container h6 {
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+}
+.newsletter .overlay-container .text-container p {
+  font-family: "Merriweather";
+  font-style: italic;
+  letter-spacing: 0.4rem;
+  font-size: 1.4rem;
+  text-transform: none;
+}
+.newsletter .overlay-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+.newsletter .overlay-container form input[type=email] {
+  height: 42px;
+  width: 124px;
+  border-radius: 64px;
+  letter-spacing: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  width: 328px;
+  text-align: center;
+}
+.newsletter .overlay-container form button {
+  height: 42px;
+  width: 124px;
+  border-radius: 64px;
+  letter-spacing: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ca7379;
+  color: #ffffff;
+}
+
+.brand-container {
+  padding: 80px 0;
+  border-bottom: 1px #cccccc solid;
+}
+.brand-container .brand-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo-outline-style {
+  margin-bottom: 0;
+}
+.promo-outline-style .card-container {
+  border: 1px solid #ca7379;
+  padding: 16px 0;
+}
+.promo-outline-style .card-container .icon {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.promo-outline-style .card-container h5 {
+  color: #222222;
+  letter-spacing: 0.2rem;
+  margin-bottom: 8px;
+}
+.promo-outline-style .card-container p {
+  font-family: "Merriweather";
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  text-transform: none;
 }

@@ -2,9 +2,11 @@
 @use "./mixin" as userM;
 
 .promotion {
-	display: flex;
-	gap: userV.$reg-spacing;
-	margin-bottom: 80px;
+	padding: 80px 0;
+	.wrapper {
+		display: flex;
+		gap: userV.$reg-spacing;
+	}
 	// Styling the layout and size
 	.card-container {
 		display: flex;
@@ -148,7 +150,9 @@
 			}
 		}
 	}
-
+	.overlay {
+		display: none;
+	}
 	.upper:hover .overlay,
 	.upper:focus .overlay {
 		position: absolute;
@@ -188,9 +192,9 @@
 	font-weight: normal;
 	text-align: center;
 	margin-bottom: 16px;
+	line-height: 16px;
 	h5 {
 		font-weight: normal;
-		line-height: px;
 	}
 }
 .price {

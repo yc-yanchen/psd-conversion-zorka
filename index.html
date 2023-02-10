@@ -92,11 +92,13 @@
                 <img id="js-slide">
             </div>
             <!-- .img-container END, this is populated on page load with javascript  -->
-            <!-- .hero END -->
+        </div>
+        <!-- .hero END -->
     </header>
     <main>
-        <div class="wrapper">
-            <section class="promotion">
+
+        <section class="promotion">
+            <div class="wrapper">
                 <div class="card-container">
                     <div class="info">
                         <h5>Free shipping worldwide</h5>
@@ -115,38 +117,43 @@
                     </div>
                     <div class="icon"><img src="./assets/images/white-diamond-icon.png"></div>
                 </div>
-            </section>
-            <!-- .promotion END -->
+            </div>
 
-            <section class="trendy shop-header">
-                <h3>Trendy clothing</h3>
-                <h4>Trending</h4>
-                <ul class="style-selection">
-                    <li>
-                        <p>Features</p>
-                        <div class="half-underline"></div>
-                    </li>
-                    <li>
-                        <p>Men style</p>
-                        <div class="half-underline"></div>
-                    </li>
-                    <li>
-                        <p>Women style</p>
-                        <div class="half-underline"></div>
+        </section>
+        <!-- .promotion END -->
 
-                    </li>
-                    <li>
-                        <p>Kid style</p>
-                        <div class="half-underline"></div>
-                    </li>
-                </ul>
-            </section>
+        <section class="trendy shop-header">
+            <h3>Trendy clothing</h3>
+            <h4>Trending</h4>
+            <ul class="style-selection">
+                <li>
+                    <p>Features</p>
+                    <div class="half-underline"></div>
+                </li>
+                <li>
+                    <p>Men style</p>
+                    <div class="half-underline"></div>
+                </li>
+                <li>
+                    <p>Women style</p>
+                    <div class="half-underline"></div>
 
+                </li>
+                <li>
+                    <p>Kid style</p>
+                    <div class="half-underline"></div>
+                </li>
+            </ul>
+        </section>
+
+        <div class="wrapper">
             <section class="shop shop-trendy">
                 <!-- populated by javascript -->
             </section>
+        </div>
 
-            <section class="promotion">
+        <section class="promotion">
+            <div class="wrapper">
                 <a class="banner-link banner-link-left" href="#">
                     <p class="overlay-text">Zorka fashion store</p>
                     <img src="./assets/images/home-bg-1.jpg" alt="Zorka fashion store">
@@ -162,19 +169,19 @@
                             </p>
                             <p class="overlay-text"> every Tuesday</p>
                         </div>
-
                     </div>
-
                     <img src="./assets/images/home-bg-2.jpg" alt="Person removing sweater">
                 </a>
-            </section>
-            <!-- .promotion END -->
+            </div>
+        </section>
+        <!-- .promotion END -->
 
-            <section class="sale shop-header">
-                <h3>Sale off</h3>
-                <h4>Up to 50%</h4>
-            </section>
+        <section class="sale shop-header">
+            <h3>Sale off</h3>
+            <h4>Up to 50%</h4>
+        </section>
 
+        <div class="wrapper">
             <section class="shop shop-sale">
                 <!-- populated by javascript -->
             </section>
@@ -216,16 +223,16 @@
         </section>
         <!-- .small-shop-container END -->
 
-        <section class="sale shop-header">
-            <h3>Blog updates</h3>
-            <h4>Our stories</h4>
-        </section>
-
-
         <section class="blog-container">
+            <section class="sale shop-header">
+                <h3>Blog updates</h3>
+                <h4>Our stories</h4>
+            </section>
             <div class="wrapper">
+
                 <div class="blog-post">
-                    <a href="#"><img src="./assets/images/blog-img-1.jpg" alt="#"></a>
+                    <a href="#"><img src="./assets/images/blog-img-1.jpg"
+                            alt="Face of girl with black frame glasses"></a>
                     <div class="text-container">
                         <a href="#" class="blog-title">
                             <h5>Mix and match weekend</h5>
@@ -235,20 +242,21 @@
                     </div>
                 </div>
                 <div class="blog-post">
-                    <a href="#"><img src="./assets/images/blog-img-1.jpg" alt="#"></a>
+                    <a href="#"><img src="./assets/images/blog-img-2.jpg"
+                            alt="Guy in leather jacket with hands in pocket"></a>
                     <div class="text-container">
                         <a href="#" class="blog-title">
-                            <h5>Mix and match weekend</h5>
+                            <h5>For your inspiration</h5>
                         </a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, nulla!</p>
                         <a href="#" class="read-more">Read more</a>
                     </div>
                 </div>
                 <div class="blog-post">
-                    <a href="#"><img src="./assets/images/blog-img-1.jpg" alt="#"></a>
+                    <a href="#"><img src="./assets/images/blog-img-3.jpg" alt="Woman in dress facing away"></a>
                     <div class="text-container">
                         <a href="#" class="blog-title">
-                            <h5>Mix and match weekend</h5>
+                            <h5>London Fashion Week 2015</h5>
                         </a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, nulla!</p>
                         <a href="#" class="read-more">Read more</a>
@@ -256,10 +264,10 @@
                 </div>
             </div>
         </section>
-
+        <!-- .blog-container END -->
         <section class="newsletter">
             <div class="overlay-container">
-                <img src="./assets/images/envelope-icon.png" alt="">
+                <img src="./assets/images/envelope-icon.png" alt="Black and white photo of person putting on boots">
                 <div class="text-container">
                     <h6>Subscribe</h6>
                     <p>Get the latests news and updates from Zorka</p>
@@ -276,10 +284,132 @@
             </div>
         </section>
         <!-- .newsletter END -->
-
+        <section class="brand-container">
+            <div class="wrapper">
+                <ul class="brand-list">
+                    <li class="brand"><img src="./assets/images/bershka.png" alt="Bershka logo"></li>
+                    <li class="brand"><img src="./assets/images/pull-bear.png" alt="Pull Bear logo"></li>
+                    <li class="brand"><img src="./assets/images/hm.png" alt="H&M logo"></li>
+                    <li class="brand"><img src="./assets/images/zara.png" alt="Zara logo"></li>
+                    <li class="brand"><img src="./assets/images/mango.png" alt="Mango logo"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- .bran-container END -->
+        <section class="promotion promo-outline-style">
+            <div class="wrapper">
+                <div class="card-container">
+                    <div class="icon">
+                        <img src="./assets/images/clock-icon.png" alt="Clock icon">
+                    </div>
+                    <div class="text-container">
+                        <h5>Opening all week</h5>
+                        <p>8AM : 8PM</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="icon">
+                        <img src="./assets/images/medal-icon.png" alt="Medal icon">
+                    </div>
+                    <div class="text-container">
+                        <h5>25% off women t-shirt</h5>
+                        <p>On order over 500USD</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="icon">
+                        <img src="./assets/images/world-icon.png" alt="World icon">
+                    </div>
+                    <div class="text-container">
+                        <h5>Free ship all order</h5>
+                        <p>Worldwide shipping</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .promotion .promo-outline-style END -->
 
     </main>
     <footer>
+
+        <div class="wrapper">
+            <ul class="footer-location">
+                <li>
+                    <h5>Location</h5>
+                </li>
+                <li>580, Broadway, 10012 - New York NY - U</li>
+                <li>Tel. +1 213431725</li>
+                <li>Email. info@themove.com</li>
+                <li>
+                    <ul class="social">
+                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        <li><a href="#"><span class="fa fa-vk"></span></a></li>
+                        <li><a href="#"><span class="fa fa-be"></span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- .footer-location END -->
+            <ul class="footer-help">
+                <li>
+                    <h5>Help</h5>
+                </li>
+                <li>
+                    <nav>
+                        <ul>
+                            <li><a href="#">How to buy</a></li>
+                            <li><a href="#">General information</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Exchanges</a></li>
+                            <li><a href="#">Gift card</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Watches</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+            <!-- .footer-help END -->
+            <ul class="footer-policies">
+                <li>
+                    <h5>Policies</h5>
+                </li>
+                <li>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Environmental policy</a></li>
+                            <li><a href="#">Animal welfare</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Purchase conditions</a></li>
+                            <li><a href="#">Gift card conditions</a></li>
+                            <li><a href="#">Warranty on watches</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+            <!-- .footer-policies END -->
+            <ul class="footer-company">
+                <li>
+                    <h5>Company</h5>
+                </li>
+                <li>
+                    <nav>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Offices</a></li>
+                            <li><a href="#">Stores</a></li>
+                            <li><a href="#">Work with us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+            <!-- .footer-policies END -->
+        </div>
+        <!-- .wrapper END -->
+
     </footer>
     <script type="module" src="./scripts/script.js">
     </script>
