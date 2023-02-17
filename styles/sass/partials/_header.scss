@@ -130,5 +130,10 @@
 	gap: 0 16px;
 	span {
 		font-size: 1.6rem;
+		color: userV.$outline-gray;
+	}
+	span:hover,
+	span:focus {
+		color: userV.$text-black;
 	}
 }

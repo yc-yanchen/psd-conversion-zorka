@@ -1,0 +1,67 @@
+@use "./variables" as userV;
+
+footer {
+	padding: 80px 0 40px 0;
+	background-color: userV.$bg-gray;
+}
+
+footer .information-container {
+	display: flex;
+	margin-bottom: 40px;
+	.footer-section {
+		width: 25%;
+		padding-right: 5%;
+	}
+
+	.header-container {
+		padding-bottom: 6px;
+		display: inline-block;
+		border-bottom: 1px solid userV.$text-black;
+		margin-bottom: 24px;
+		h5 {
+			font-size: 1.4rem;
+			font-weight: normal;
+			letter-spacing: 0.6rem;
+		}
+	}
+	.location {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+		margin-bottom: 40px;
+	}
+	.contact {
+		margin-bottom: 32px;
+		p {
+			color: userV.$text-gray;
+			text-transform: none;
+			font-size: 1.4rem;
+			margin-bottom: 8px;
+		}
+	}
+
+	nav li a {
+		display: inline-block;
+		font-size: 1.3rem;
+		letter-spacing: 0.1rem;
+		margin-bottom: 16px;
+		color: userV.$text-gray;
+	}
+	nav li a:focus,
+	nav li a:hover {
+		color: userV.$text-black;
+	}
+}
+
+.bottom-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	p {
+		color: userV.$text-gray;
+		font-size: 1.4rem;
+	}
+
+	.payment {
+		display: flex;
+	}
+}

@@ -565,6 +565,11 @@ button {
 }
 .social span {
   font-size: 1.6rem;
+  color: #cccccc;
+}
+.social span:hover,
+.social span:focus {
+  color: #222222;
 }
 
 .promotion {
@@ -1220,4 +1225,77 @@ button {
   letter-spacing: 0.2rem;
   font-size: 1.2rem;
   text-transform: none;
+}
+
+footer {
+  padding: 80px 0 40px 0;
+  background-color: #fafafa;
+}
+
+footer .information-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+footer .information-container .footer-section {
+  width: 25%;
+  padding-right: 5%;
+}
+footer .information-container .header-container {
+  padding-bottom: 6px;
+  display: inline-block;
+  border-bottom: 1px solid #222222;
+  margin-bottom: 24px;
+}
+footer .information-container .header-container h5 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 0.6rem;
+}
+footer .information-container .location {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 40px;
+}
+footer .information-container .contact {
+  margin-bottom: 32px;
+}
+footer .information-container .contact p {
+  color: #888888;
+  text-transform: none;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+footer .information-container nav li a {
+  display: inline-block;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 16px;
+  color: #888888;
+}
+footer .information-container nav li a:focus,
+footer .information-container nav li a:hover {
+  color: #222222;
+}
+
+.bottom-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bottom-footer p {
+  color: #888888;
+  font-size: 1.4rem;
+}
+.bottom-footer .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
