@@ -54,3 +54,24 @@
 		right: 0;
 	}
 }
+
+@media (max-width: 1150px) {
+	.small-shop-container {
+		.wrapper {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 40px;
+		}
+	}
+	.small-shop {
+		width: 100%;
+		.product-flex {
+			flex-direction: row;
+			gap: userV.$reg-spacing;
+		}
+	}
+	.small-product-card {
+		width: calc((100% - userV.$reg-spacing) / 2);
+	}
+}

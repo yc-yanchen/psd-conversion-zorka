@@ -20,4 +20,3 @@ shop.mountSmallProduct(shop.productStructureSmall(), assets.shopProduct, 'top-ra
 
 favorite.addToFave();
 
-console.log(document.querySelector('.small-product-card'));

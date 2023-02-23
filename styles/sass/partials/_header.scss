@@ -76,6 +76,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 700px;
+	width: 100%;
 
 	.overlay-container {
 		display: flex;
@@ -85,9 +87,8 @@
 		z-index: 10;
 	}
 	.img-container {
-		gap: 80px;
+		width: 100%;
 		img {
-			object-fit: none;
 		}
 	}
 	h1 {

@@ -118,18 +118,28 @@
 	width: 100%;
 	gap: userV.$reg-spacing;
 	margin-bottom: 80px;
-	overflow: hidden;
+	// overflow: hidden;
+	flex-wrap: wrap;
 	.product-card {
 		display: flex;
 		flex-direction: column;
+
 		align-items: center;
 		width: calc((100% - userV.$reg-spacing * 3) / 4);
+		flex-grow: 0;
 	}
 	.upper {
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		.img-container {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
 	}
 	.lower {
 		padding-top: 24px;
@@ -147,6 +157,9 @@
 			.flex-container {
 				display: flex;
 				gap: 0 8px;
+			}
+			.to-cart::after {
+				content: "Add to cart";
 			}
 		}
 	}

@@ -487,6 +487,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 700px;
+  width: 100%;
 }
 .hero .overlay-container {
   display: -webkit-box;
@@ -503,11 +505,7 @@ button {
   z-index: 10;
 }
 .hero .img-container {
-  gap: 80px;
-}
-.hero .img-container img {
-  -o-object-fit: none;
-     object-fit: none;
+  width: 100%;
 }
 .hero h1 {
   font-size: 1.6rem;
@@ -713,7 +711,8 @@ button {
   width: 100%;
   gap: 36px;
   margin-bottom: 80px;
-  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .shop .product-card {
   display: -webkit-box;
@@ -727,6 +726,9 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: calc((100% - 108px) / 4);
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 .shop .upper {
   position: relative;
@@ -739,6 +741,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.shop .upper .img-container {
+  width: 100%;
+}
+.shop .upper .img-container img {
+  width: 100%;
 }
 .shop .lower {
   padding-top: 24px;
@@ -770,6 +778,9 @@ button {
   display: -ms-flexbox;
   display: flex;
   gap: 0 8px;
+}
+.shop .lower .action .to-cart::after {
+  content: "Add to cart";
 }
 .shop .overlay {
   display: none;
@@ -1028,6 +1039,34 @@ button {
   right: 0;
 }
 
+@media (max-width: 1150px) {
+  .small-shop-container .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+  .small-shop {
+    width: 100%;
+  }
+  .small-shop .product-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 36px;
+  }
+  .small-product-card {
+    width: calc((100% - 36px) / 2);
+  }
+}
 .blog-container {
   padding: 80px 0;
 }
@@ -1298,4 +1337,5 @@ footer .information-container nav li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 8px;
 }
