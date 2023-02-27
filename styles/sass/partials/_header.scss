@@ -143,3 +143,37 @@
 		color: userV.$text-black;
 	}
 }
+
+.hamburger-menu {
+	display: none;
+	.fa-bars {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 900px) {
+	.hamburger-menu {
+		display: block;
+		cursor: pointer;
+	}
+	.header-nav {
+		position: relative;
+		justify-content: space-between;
+		nav ul {
+			left: -48px;
+			top: 48px;
+			box-sizing: content-box;
+			background-color: white;
+			width: 200px;
+			padding: 24px 48px 48px 48px;
+			flex-direction: column;
+			gap: 24px;
+			position: absolute;
+			z-index: 100;
+			visibility: hidden;
+		}
+		.menu-open {
+			visibility: visible;
+		}
+	}
+}

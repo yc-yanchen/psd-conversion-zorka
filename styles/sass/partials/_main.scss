@@ -172,3 +172,15 @@
 		}
 	}
 }
+@media (max-width: 1150px) {
+	.promotion {
+		.card-container {
+			.info {
+				padding: 0 24px;
+			}
+			.icon {
+				// display: none;
+			}
+		}
+	}
+}
