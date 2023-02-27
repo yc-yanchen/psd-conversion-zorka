@@ -487,8 +487,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 700px;
-  width: 100%;
 }
 .hero .overlay-container {
   display: -webkit-box;
@@ -505,7 +503,20 @@ button {
   z-index: 10;
 }
 .hero .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  height: 700px;
+  width: 100%;
+}
+.hero .img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 .hero h1 {
   font-size: 1.6rem;
@@ -702,6 +713,74 @@ button {
   width: 48px;
   height: 1px;
   background-color: #222222;
+}
+
+.promotion .banner-link {
+  position: relative;
+  width: calc(100% - 36px);
+}
+.promotion .banner-link img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.promotion .banner-link-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.promotion .banner-link-left .overlay-text {
+  position: absolute;
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  word-spacing: 100rem;
+  width: 272px;
+}
+.promotion .banner-link-right .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.promotion .banner-link-right .icon {
+  padding: 8px 12px;
+  border: #ffffff 2px solid;
+  border-right: none;
+}
+.promotion .banner-link-right .text {
+  border: #ffffff 2px solid;
+  padding: 8px;
+}
+.promotion .banner-link-right .overlay-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-justify: auto;
+  letter-spacing: 0.6rem;
+}
+.promotion .banner-link-right .attention {
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 1rem;
 }
 
 .shop {
@@ -902,74 +981,14 @@ button {
           align-items: center;
 }
 
-.promotion .banner-link {
-  position: relative;
-  width: calc(100% - 36px);
+@media (max-width: 1150px) {
+  .shop .lower .action .to-cart::after {
+    content: url(../assets/images/cart-icon-2.png);
+  }
+  .shop .lower .action .button-pill {
+    width: 42px;
+  }
 }
-.promotion .banner-link img {
-  width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.promotion .banner-link-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.promotion .banner-link-left .overlay-text {
-  position: absolute;
-  color: #ffffff;
-  font-size: 3rem;
-  letter-spacing: 1rem;
-  font-weight: bold;
-  word-spacing: 100rem;
-  width: 272px;
-}
-.promotion .banner-link-right .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.promotion .banner-link-right .icon {
-  padding: 8px 12px;
-  border: #ffffff 2px solid;
-  border-right: none;
-}
-.promotion .banner-link-right .text {
-  border: #ffffff 2px solid;
-  padding: 8px;
-}
-.promotion .banner-link-right .overlay-text {
-  color: #ffffff;
-  font-size: 1.5rem;
-  text-justify: auto;
-  letter-spacing: 0.6rem;
-}
-.promotion .banner-link-right .attention {
-  font-weight: bold;
-  font-size: 3rem;
-  letter-spacing: 1rem;
-}
-
 .small-shop-container {
   background-color: #fafafa;
   padding: 80px 0;
@@ -1066,6 +1085,9 @@ button {
   .small-product-card {
     width: calc((100% - 36px) / 2);
   }
+  .small-product-card .action {
+    right: auto;
+  }
 }
 .blog-container {
   padding: 80px 0;
@@ -1114,6 +1136,14 @@ button {
   font-size: 1.2rem;
 }
 
+@media (max-width: 1150px) {
+  .blog-container .wrapper .blog-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .newsletter {
   position: relative;
   display: -webkit-box;
@@ -1132,7 +1162,7 @@ button {
 }
 .newsletter .img-container {
   height: 400px;
-  width: 1920px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }

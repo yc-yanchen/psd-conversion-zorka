@@ -41,3 +41,11 @@
 		font-size: 1.2rem;
 	}
 }
+
+@media (max-width: 1150px) {
+	.blog-container .wrapper {
+		.blog-post {
+			flex-direction: column;
+		}
+	}
+}

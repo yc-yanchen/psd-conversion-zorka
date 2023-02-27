@@ -73,5 +73,8 @@
 	}
 	.small-product-card {
 		width: calc((100% - userV.$reg-spacing) / 2);
+		.action {
+			right: auto;
+		}
 	}
 }
