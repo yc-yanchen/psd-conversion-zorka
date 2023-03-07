@@ -548,6 +548,11 @@ button {
           align-items: center;
   background-color: white;
 }
+@media (max-width: 860px) {
+  .hero .button-pill {
+    height: 32px;
+  }
+}
 .hero .carousel-indicator {
   position: absolute;
   bottom: 40px;
@@ -696,7 +701,7 @@ button {
   margin-bottom: 48px;
 }
 
-.shop-header {
+.shop-header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,13 +713,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
-.shop-header h3 {
+.shop-header .wrapper h3 {
   font-size: 2.1rem;
   font-weight: normal;
   letter-spacing: 0.8rem;
   margin-bottom: 16px;
 }
-.shop-header h4 {
+.shop-header .wrapper h4 {
   font-size: 1.3rem;
   font-family: "Merriweather";
   font-style: italic;
@@ -723,32 +728,32 @@ button {
   text-transform: capitalize;
   margin-bottom: 64px;
 }
-.shop-header .style-selection {
+.shop-header .wrapper .style-selection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0 64px;
 }
-.shop-header .style-selection p {
+.shop-header .wrapper .style-selection p {
   font-size: 1.3rem;
   letter-spacing: 0.3rem;
   margin-bottom: 12px;
 }
-.shop-header .style-selection .half-underline {
+.shop-header .wrapper .style-selection .half-underline {
   width: 48px;
   height: 1px;
   background-color: rgba(0, 0, 0, 0);
 }
-.shop-header .style-selection li:hover,
-.shop-header .style-selection li:focus {
+.shop-header .wrapper .style-selection li:hover,
+.shop-header .wrapper .style-selection li:focus {
   cursor: pointer;
 }
-.shop-header .style-selection li:hover p,
-.shop-header .style-selection li:focus p {
+.shop-header .wrapper .style-selection li:hover p,
+.shop-header .wrapper .style-selection li:focus p {
   color: #ca7379;
 }
-.shop-header .style-selection li:hover .half-underline,
-.shop-header .style-selection li:focus .half-underline {
+.shop-header .wrapper .style-selection li:hover .half-underline,
+.shop-header .wrapper .style-selection li:focus .half-underline {
   width: 48px;
   height: 1px;
   background-color: #222222;
@@ -825,6 +830,18 @@ button {
 @media (max-width: 1150px) {
   .promotion .card-container .info {
     padding: 0 24px;
+    width: 100%;
+  }
+  .promotion .card-container .icon {
+    display: none;
+  }
+}
+@media (max-width: 860px) {
+  .trendy {
+    margin-top: 48px;
+  }
+  .promotion {
+    display: none;
   }
 }
 .shop {
@@ -947,6 +964,11 @@ button {
           align-items: center;
   border: #cccccc 1px solid;
 }
+@media (max-width: 860px) {
+  .shop .button-pill {
+    height: 32px;
+  }
+}
 .shop .button-pill:hover,
 .shop .button-pill:focus {
   background-color: #ca7379;
@@ -967,6 +989,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 860px) {
+  .shop .button-round {
+    height: 32px;
+    width: 32px;
+  }
 }
 
 .product-name {
@@ -1024,6 +1052,12 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 860px) {
+  .button-round {
+    height: 32px;
+    width: 32px;
+  }
+}
 
 @media (max-width: 1150px) {
   .shop .lower .action .to-cart::after {
@@ -1033,9 +1067,24 @@ button {
     width: 42px;
   }
 }
+@media (max-width: 860px) {
+  .shop {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .shop .product-card {
+    width: auto;
+  }
+  .shop .lower {
+    width: 100%;
+  }
+}
 .small-shop-container {
   background-color: #fafafa;
-  padding: 80px 0;
+  padding: 80px 0 80px 0;
 }
 .small-shop-container .wrapper {
   display: -webkit-box;
@@ -1131,6 +1180,18 @@ button {
   }
   .small-product-card .action {
     right: auto;
+  }
+}
+@media (max-width: 674px) {
+  .small-shop .product-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .small-product-card {
+    width: 100%;
   }
 }
 .blog-container {
@@ -1283,6 +1344,11 @@ button {
   width: 328px;
   text-align: center;
 }
+@media (max-width: 860px) {
+  .newsletter .overlay-container form input[type=email] {
+    height: 32px;
+  }
+}
 .newsletter .overlay-container form button {
   height: 42px;
   width: 124px;
@@ -1299,6 +1365,11 @@ button {
           align-items: center;
   background-color: #ca7379;
   color: #ffffff;
+}
+@media (max-width: 860px) {
+  .newsletter .overlay-container form button {
+    height: 32px;
+  }
 }
 
 .brand-container {

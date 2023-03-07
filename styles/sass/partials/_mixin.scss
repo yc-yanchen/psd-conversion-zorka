@@ -8,6 +8,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: 860px) {
+		height: 32px;
+	}
 }
 
 @mixin round-shape {
@@ -18,4 +21,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: 860px) {
+		height: 32px;
+		width: 32px;
+	}
 }

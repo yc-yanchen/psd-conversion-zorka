@@ -2,7 +2,7 @@
 
 .small-shop-container {
 	background-color: userV.$bg-gray;
-	padding: 80px 0;
+	padding: 80px 0 80px 0;
 	.wrapper {
 		display: flex;
 		gap: 0 userV.$reg-spacing;
@@ -76,5 +76,17 @@
 		.action {
 			right: auto;
 		}
+	}
+}
+
+@media (max-width: 674px) {
+	.small-shop {
+		.product-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+	.small-product-card {
+		width: 100%;
 	}
 }

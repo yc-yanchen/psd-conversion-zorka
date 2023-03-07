@@ -140,3 +140,16 @@
 		}
 	}
 }
+
+@media (max-width: 860px) {
+	.shop {
+		justify-content: center;
+		flex-wrap: wrap;
+		.product-card {
+			width: auto;
+		}
+		.lower {
+			width: 100%;
+		}
+	}
+}
