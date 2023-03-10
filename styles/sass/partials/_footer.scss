@@ -22,6 +22,9 @@ footer .information-container {
 			font-size: 1.4rem;
 			font-weight: normal;
 			letter-spacing: 0.6rem;
+			.footer-chevron {
+				display: none;
+			}
 		}
 	}
 	.location {
@@ -64,5 +67,47 @@ footer .information-container {
 	.payment {
 		display: flex;
 		gap: 8px;
+	}
+}
+
+@media (max-width: 674px) {
+	footer {
+		padding: 64px 0 24px 0;
+		.header-container {
+			width: 100%;
+		}
+	}
+
+	footer .information-container {
+		flex-direction: column;
+		gap: 40px;
+		.footer-section {
+			width: 100%;
+			h5 {
+				cursor: pointer;
+				width: auto;
+				.footer-chevron {
+					display: inline-block;
+				}
+			}
+		}
+
+		.footer-nav-close {
+			display: none;
+		}
+	}
+	.bottom-footer {
+		flex-direction: column;
+		gap: 16px;
+		p {
+			order: 2;
+		}
+		.payment {
+			gap: 24px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			order: 1;
+		}
 	}
 }

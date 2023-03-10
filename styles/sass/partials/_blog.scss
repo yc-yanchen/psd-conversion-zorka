@@ -49,3 +49,13 @@
 		}
 	}
 }
+
+@media (max-width: 674px) {
+	.blog-container .wrapper {
+		flex-direction: column;
+		.blog-post {
+			flex-direction: row;
+			width: 100%;
+		}
+	}
+}

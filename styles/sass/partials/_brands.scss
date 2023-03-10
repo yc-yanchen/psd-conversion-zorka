@@ -9,3 +9,12 @@
 		align-items: center;
 	}
 }
+
+@media (max-width: 674px) {
+	.brand-container {
+		.brand-list {
+			flex-wrap: wrap;
+			gap: 24px;
+		}
+	}
+}

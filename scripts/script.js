@@ -3,6 +3,7 @@ import header from "./headerScript.js";
 import shop from "./shop.js";
 import favorite from "./favorite.js";
 import hamburger from "./hamburger.js";
+import footer from "./footer.js";
 
 // Slideshow
 const slideshowIndex = 0;
@@ -23,3 +24,4 @@ favorite.addToFave();
 
 hamburger.openMenu();
 
+footer.displayNav();

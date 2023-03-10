@@ -67,3 +67,18 @@
 		}
 	}
 }
+
+@media (max-width: 674px) {
+	.newsletter {
+		.img-container {
+			height: 300px;
+		}
+		.overlay-container {
+			form {
+				flex-direction: column;
+				align-items: center;
+				gap: 16px;
+			}
+		}
+	}
+}
