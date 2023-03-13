@@ -192,3 +192,16 @@
 		display: none;
 	}
 }
+
+@media (max-width: 674px) {
+	.shop-header .wrapper {
+		h3 {
+			text-align: center;
+		}
+		.style-selection {
+			width: 100%;
+			overflow-x: scroll;
+			gap: 0 32px;
+		}
+	}
+}

@@ -626,6 +626,17 @@ button {
   }
 }
 @media (max-width: 674px) {
+  header > .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .banner {
     display: none;
   }
@@ -640,10 +651,11 @@ button {
     font-size: 4rem;
   }
   .header-main {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-top: 16px;
+    margin-bottom: 24px;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
   }
   .header-main .social-container {
     display: none;
@@ -651,11 +663,23 @@ button {
   .header-main .img-container {
     height: 40px;
     width: 80px;
-  }
-  .header-main > * {
     -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .header-nav {
+    margin-bottom: 0px;
+    position: static;
+  }
+  .header-nav .hamburger-menu {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .header-nav nav ul {
+    left: auto;
+    right: 0;
+    top: 80px;
   }
 }
 .promotion {
@@ -875,6 +899,16 @@ button {
   }
   .promotion {
     display: none;
+  }
+}
+@media (max-width: 674px) {
+  .shop-header .wrapper h3 {
+    text-align: center;
+  }
+  .shop-header .wrapper .style-selection {
+    width: 100%;
+    overflow-x: scroll;
+    gap: 0 32px;
   }
 }
 .shop {
