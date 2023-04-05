@@ -24,11 +24,8 @@ shop.mountProduct = (html, assets, condition, location) => {
         //create a new div with class of product-card
         const newProduct = document.createElement('div');
         newProduct.classList = 'product-card';
-        // console.log(document.querySelector('.product-card'));
-
         // add shop.productStructure as innerHTML
         newProduct.innerHTML = (html);
-        // console.log(newProduct);
         // modify the content within the innerHTML
         // modify img link
         newProduct.children[0].children[1].children[0].src = product.productImg;

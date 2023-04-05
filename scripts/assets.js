@@ -3,6 +3,7 @@ import ProductInfo from "./productInfo.js";
 const assets = {};
 
 
+// Link, alt text, and overlay text for the carousel
 assets.slideshowAssets = [
     {
         src: "./assets/images/slideshow1.jpg",
